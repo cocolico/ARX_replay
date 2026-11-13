@@ -1,0 +1,39 @@
+{
+  "recorded_date": "2026-11-13",
+  "source": "user_manual_measurement",
+  "arm": "right",
+  "units": "m",
+  "status": "unverified_position_reference_only",
+  "intended_use": "manual_alternative_reference_for_hand_eye_calibration",
+  "raw_measurements_m": {
+    "camera_optical_center_height_above_table": 0.57,
+    "current_endpoint_right_of_camera": 0.305,
+    "current_endpoint_front_of_camera": 0.30,
+    "current_endpoint_height_above_table": 0.16
+  },
+  "measurement_frame": {
+    "name": "M_manual_table_reference",
+    "origin": "vertical_projection_of_camera_optical_center_onto_table",
+    "component_directions": ["user_described_right", "user_described_front", "table_normal_up"],
+    "assumption": "right_and_front_are_orthogonal_table_plane_components",
+    "axis_directions_and_handedness_confirmed": false,
+    "is_camera_optical_frame": false,
+    "is_robot_base_frame": false
+  },
+  "derived_positions_in_M_m": {
+    "camera_optical_center": [0.0, 0.0, 0.57],
+    "current_right_arm_endpoint_center": [0.305, 0.30, 0.16],
+    "camera_to_current_endpoint_displacement": [0.305, 0.30, -0.41]
+  },
+  "camera_to_robot_base_transform": null,
+  "endpoint_matches_sdk_tcp": null,
+  "measurement_uncertainty_m": null,
+  "complete_hand_eye_calibration": false,
+  "ready_for_robot_replay": false,
+  "limitations": [
+    "A single measured endpoint position does not determine a full rigid transform.",
+    "Rotation and the relationship to the robot base remain unknown.",
+    "Endpoint position applies only to the measured arm pose.",
+    "Confirm the physical meaning of right/front and the SDK TCP before use."
+  ]
+}

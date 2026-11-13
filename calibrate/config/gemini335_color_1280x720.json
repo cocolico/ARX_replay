@@ -1,0 +1,37 @@
+{
+  "width": 1280,
+  "height": 720,
+  "K": [
+    [
+      690.449462890625,
+      0,
+      648.954833984375
+    ],
+    [
+      0,
+      690.51904296875,
+      356.2877197265625
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "D": [
+    0.007136572152376175,
+    -0.0460803247988224,
+    -0.0004173986380919814,
+    9.876940021058545e-05,
+    0.03198618441820145,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "distortion_model": "rational_polynomial",
+  "frame_id": "gemini335_color_optical_frame",
+  "device": "Orbbec Gemini 335",
+  "serial": "CP0B163000CK",
+  "source": "/home/descfly/ty/replay/cam/camera_intrinsics.json",
+  "image_state": "raw_color_no_resize_crop_or_undistortion"
+}
